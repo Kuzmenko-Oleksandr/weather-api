@@ -27,3 +27,9 @@ services:
         image: redis:7
         ports:
             - "6379:6379"
+
+    mailpit:
+        image: axllent/mailpit
+        ports:
+            - "8025:8025"
+
