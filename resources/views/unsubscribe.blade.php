@@ -18,7 +18,11 @@
 
     <!-- Unsubscribe button -->
     <button onclick="getTokenAndUnsubscribe()" class="bg-red-500 text-white px-4 py-2 rounded w-full">Unsubscribe</button>
+
+    <a href="/weather" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded inline-block">Back to Weather</a>
+
 </div>
+
 
 <script>
     /**

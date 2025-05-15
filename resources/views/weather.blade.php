@@ -44,6 +44,9 @@
         Subscribe
     </button>
 
+    <a href="/unsubscribe" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded inline-block">Go to Unsubscribe page</a>
+
+
     <div id="result" class="mt-4 text-center"></div>
 </div>
 
