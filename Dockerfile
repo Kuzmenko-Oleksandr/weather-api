@@ -45,11 +45,11 @@ COPY . .
 # Install Composer dependencies
 RUN composer install --optimize-autoloader --no-dev
 
-# Check if APP_KEY is already set, otherwise generate it
-#RUN if [ -z "$APP_KEY" ]; then \
-#    php artisan key:generate; \
-#    fi
+# Run migrations
+RUN php artisan migrate --force
 
 EXPOSE 8000
 
 CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8000"]
+
+
