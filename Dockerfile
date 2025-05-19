@@ -17,9 +17,10 @@ COPY . .
 
 RUN composer install
 
-# generating APP_KEY
-RUN php artisan key:generate
+# generating APP_KEY for local
+#RUN php artisan key:generate
 
 EXPOSE 8000
 
 CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8000"]
+
