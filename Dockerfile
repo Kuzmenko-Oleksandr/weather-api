@@ -45,8 +45,6 @@ COPY . .
 # Install Composer dependencies
 RUN composer install --optimize-autoloader --no-dev
 
-# Run migrations
-RUN php artisan migrate
 
 EXPOSE 8000
 
