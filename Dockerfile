@@ -14,8 +14,11 @@ COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 WORKDIR /var/www/html
 
 COPY . .
+# for local
+#RUN composer install
 
-RUN composer install
+#server
+RUN composer install --optimize-autoloader --no-dev
 
 # generating APP_KEY for local
 #RUN php artisan key:generate
